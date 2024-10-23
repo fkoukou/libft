@@ -26,9 +26,9 @@ size_t ft_strlcat(char *dst , char *src , size_t size)
   dlen = 0;
   slen = 0;
   while(dst[dlen] != '\0' && dlen < size)
-    i++;
+    dlen++;
   while(src[slen] != '\0')
-    slen;  
+    slen++;  
     
   size_t total = dlen + slen;
   
@@ -49,45 +49,11 @@ size_t ft_strlcat(char *dst , char *src , size_t size)
 }
 int main()
 {
-    char src[] = "hello fatima";
-    char dest[] = "hey";
-    size_t i = 4;
+    char src[] = "hey";
+    char dest[] = "hello fatima";
+    size_t i = 10;
     size_t lenght = ft_strlcat(dest , src , i);
     printf("%zu \n", lenght);
     printf("%s \n", src);
     printf("%s \n", dest );
 }
-/*#include <stdio.h>
-#include <stddef.h>
-#include <unistd.h>
-
-
-/*size_t ft_strlcat(char *dst , char *src , size_t size)
-{
-  size_t i;
-  size_t j;
-  j = 0;
-  i = 0;
-  while(dst[i] != '\0')
-    i++;
-  if(size > 0)
-  {
-    while(j < size - 1 && src[j]!= '\0')
-    {
-        dst[i] = src[j];
-        j++;
-    }
-    dst[i] = '\0';
-  }
-  return j;
-}
-int main()
-{
-    char src[] = "hello fatima";
-    char dest[] = "hey";
-    size_t i = 3;
-    size_t lenght = ft_strlcat(dest , src , i);
-    printf("%zu \n", lenght);
-    printf("%s \n", src);
-    printf("%s \n", dest );
-}*/
