@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 10:40:50 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/24 11:50:17 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/24 11:56:14 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,9 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
         {
             if(needle[j] == '\0')
                 return ((char *)&haystack[i + j]);
+            j++;
         }
-        j++;
+        
 
         if( needle[j] == '\0')
             return ((char *)&haystack[i]);
@@ -55,7 +56,7 @@ int main(){
 char b[] = "hello BA fatima";
 char c[]  = "BA";
 size_t n = 10;
-char  res = *ft_strnstr(b,c, n);
-printf("%c", res);
+char  *res = ft_strnstr(b,c, n);
+printf("%s", res);
 return 0;
 }
