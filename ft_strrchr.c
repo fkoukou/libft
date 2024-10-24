@@ -1,40 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 16:48:37 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/24 09:27:32 by fakoukou         ###   ########.fr       */
+/*   Created: 2024/10/24 09:28:05 by fakoukou          #+#    #+#             */
+/*   Updated: 2024/10/24 09:52:44 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 
-char *ft_strchr(const char *s, int c)
+char *ft_strrchr(const char *s, int c)
 {
-    int i;
-    i = 0;
-    while(s[i])
+    
+    char *temp;
+    temp = 0;
+    while(*s)
     {
-        if( (unsigned char)s[i] == (unsigned char)c)
-            return ((char*)&s[i]);
-
-        i++;
+        if( (unsigned char)*s == (unsigned char)c)
+        {
+            temp = (char *)s;
+        }
+        s++;
     }
-    if( (unsigned char)s[i] == (unsigned char)'\0')
+    if( (unsigned char)*s == (unsigned char)'\0')
     {
-        return ((char*)&s[i]); 
+        return (char*)s; 
     }
        
-    return (NULL);
+    return (temp);
 }
 int main(){
     char s[] = "hello fatima";
     char c  = 'l';
-  char  *res = ft_strchr(s,c);
+  char  *res = ft_strrchr(s,c);
   printf("%s", res);
-  return 0 ;
+  return 0;
 }
