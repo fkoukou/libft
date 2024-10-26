@@ -1,45 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 13:40:30 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/26 11:48:17 by fakoukou         ###   ########.fr       */
+/*   Created: 2024/10/26 11:53:30 by fakoukou          #+#    #+#             */
+/*   Updated: 2024/10/26 12:38:23 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 
 #include<unistd.h>
 #include<stdio.h>
 #include<stddef.h>
 
-void *ft_memset(void *b,  int c, size_t len)
+void bzero (void *s, size_t n)
 {
-    unsigned char *ptr;
-    char x;
     unsigned int i;
-
-    ptr = b;
+    char *ptr;
+    
+    ptr = s;
     i = 0;
-    x = c;
 
-    while(i < len)
+    while (i < n)
     {
-        ptr[i] = x;
+        ptr[i] = '0';
         i++;
     }
-    return b;
-}
-int main()
-{
-    char str[5];
-    ft_memset(&str[0], '1' , 1);
-    ft_memset(&str[1], '3' , 1);
-    ft_memset(&str[2], '3' , 1);
-    ft_memset(&str[3], '7' , 1);
-     printf("%s",str );
-    return 0;
+    return s; 
 }
