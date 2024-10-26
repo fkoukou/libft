@@ -1,38 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 11:53:30 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/26 13:06:01 by fakoukou         ###   ########.fr       */
+/*   Created: 2024/10/26 12:48:59 by fakoukou          #+#    #+#             */
+/*   Updated: 2024/10/26 14:20:12 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include<unistd.h>
 #include<stdio.h>
 #include<stddef.h>
+#include <string.h>
 
-void ft_bzero (void *s, size_t n)
+void ft_memcpy(void *dest, const void *src, size_t n)
 {
     unsigned int i;
-    char *ptr;
+    unsigned char *dest1;
+    const unsigned char *src1;
     
-    ptr = (unsigned char)s;
     i = 0;
-
+    dest1 = (unsigned char *)dest; 
+    src1 = (const unsigned char *)src; 
+     
     while (i < n)
-    {
-        ptr[i] = '0';
+    { 
+        dest1[i] = src1[i];
         i++;
-    } 
+    }
 }
+
 int main()
 {
-    char ptr[5] = "1337";
-    ft_bzero(ptr , 3);
-    printf("%s", ptr);
-    return 0;
+     char dest[] = "hello word";
+     char src[] = "fatima";
+    
+    memcpy(dest , src, 3);
+printf("%s", dest);
+    // return 0; 
 }
