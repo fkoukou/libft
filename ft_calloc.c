@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 16:16:53 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/26 17:27:42 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:56:33 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,21 @@ void *ft_calloc(size_t count, size_t size)
     }
     ft_memset(ptr , 0, size * count);
     return ptr;
+}
+
+int main() {
+    size_t num_elements = 5;
+    int *array = (int *)ft_calloc(num_elements, sizeof(int));
+
+    
+    if (array == NULL) {
+        printf("Échec de l'allocation de mémoire\n");
+        return 1;
+    }
+
+    for (size_t i = 0; i < num_elements; i++) {
+        printf("array[%zu] = %d\n", i, array[i]); 
+    }
+    free(array);
+    return 0;
 }

@@ -1,19 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_ft_strjoin.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/21 18:34:23 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 14:05:00 by fakoukou         ###   ########.fr       */
+/*   Created: 2024/10/27 14:39:19 by fakoukou          #+#    #+#             */
+/*   Updated: 2024/10/27 14:44:20 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include<unistd.h>
 
-int ft_isascii(int c)
+char *ft_strjoin(char const *s1, char const *s2)
 {
-	return (c >= 0 && c <= 127);
+    char *s1;
+    size_t i;
+    size_t j;
+    j= 0;
+    i = 0;
+
+    if (!s) 
+        return NULL;
+    
+    s1 = (char *)malloc((len + 1) * sizeof(char));
+    
+    if(s1 == NULL)
+        return NULL;
 }
