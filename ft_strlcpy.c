@@ -6,14 +6,12 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 18:34:23 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/23 13:39:17 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:58:33 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include <stdio.h>
-#include <stddef.h>
-#include <unistd.h>
+#include "libft.h"
 
 size_t ft_strlcpy(char *dst , char *src , size_t size)
 {

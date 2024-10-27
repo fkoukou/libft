@@ -6,11 +6,12 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:39:19 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 16:42:52 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 17:00:08 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 int ft_strlen(const char *s)
 {
     int lenght;

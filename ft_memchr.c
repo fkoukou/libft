@@ -6,14 +6,10 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:59:08 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 14:32:38 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:59:23 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

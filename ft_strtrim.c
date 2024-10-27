@@ -6,33 +6,11 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 15:02:03 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 16:25:24 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 17:15:05 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-char *ft_strchr(const char *s, int c) {
-    while (*s) {
-        if (*s == (char)c)
-            return (char *)s;
-        s++;
-    }
-    if ((char)c == '\0') {
-        return (char *)s; 
-    }
-    return NULL;
-}
-
-int ft_strlen(const char *s) {
-    int length = 0;    
-    while (s[length] != '\0') {
-        length++;
-    }
-    return length;
-}
+#include "libft.h"
 
 char *ft_strtrim(const char *s1, const char *set) {
     if (!s1 || !set) 

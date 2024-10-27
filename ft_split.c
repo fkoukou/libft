@@ -6,8 +6,21 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:26:06 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 16:35:15 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 17:11:08 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-   
+#include"libft.h"
+
+char **ft_split(char const *s, char c)
+{
+    char *ptr;
+    int i;
+    i = 0;
+    
+    if(!s || !c)
+        return NULL;
+    
+    while(s[i] != '\0')
+        i++;
+}

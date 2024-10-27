@@ -6,13 +6,11 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:48:37 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/24 09:27:32 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:58:52 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-
+#include "libft.h"
 char *ft_strchr(const char *s, int c)
 {
     int i;

@@ -6,14 +6,11 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:48:59 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/26 14:20:12 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:59:12 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
-#include<stdio.h>
-#include<stddef.h>
-#include <string.h>
+#include "libft.h"
 
 void ft_memcpy(void *dest, const void *src, size_t n)
 {

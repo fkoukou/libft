@@ -6,11 +6,10 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 18:34:23 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/22 18:29:41 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:59:41 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 
 int	ft_isalpha(int c)
 {

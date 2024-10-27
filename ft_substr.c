@@ -6,14 +6,11 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 13:12:13 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 14:27:26 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:57:59 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<unistd.h>
-#include<stddef.h>
-#include<stdlib.h>
+#include "libft.h"
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {

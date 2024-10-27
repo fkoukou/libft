@@ -6,24 +6,12 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 10:40:50 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/24 11:56:14 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 17:15:26 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stddef.h>
+#include "libft.h"
 
-int ft_strlen(const char *k)
-{
-    int lenght;
-    lenght = 0;    
-    while (k[lenght] != '\0')
-    {
-        lenght++;
-    }
-    return lenght;
-}
 char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
     size_t i;

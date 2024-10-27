@@ -6,14 +6,11 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 13:23:23 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/26 14:25:02 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:59:07 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <unistd.h>
-#include <stdio.h>
-#include <stddef.h>
+#include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t len)
 {

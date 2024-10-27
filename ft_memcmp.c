@@ -6,15 +6,11 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:19:17 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/26 15:49:26 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:59:17 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<stddef.h>
-#include <string.h>
-
-#include <stddef.h>
+#include "libft.h"
 
 int ft_memcmp(const void *s1, const void *s2, size_t n) {
     const unsigned char *sc1 = (const unsigned char *)s1;

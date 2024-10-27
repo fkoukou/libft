@@ -6,13 +6,11 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 16:16:53 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/26 17:56:33 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:59:51 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include<unistd.h>
+#include "libft.h"
 
 void *ft_memset(void *b,  int c, size_t len)
 {

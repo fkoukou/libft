@@ -6,13 +6,12 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:50:02 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/23 16:50:03 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:57:53 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int ft_tolower(int c)
 {

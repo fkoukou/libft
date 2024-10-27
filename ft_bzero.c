@@ -6,14 +6,12 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 11:53:30 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/26 13:06:01 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:59:58 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include<unistd.h>
-#include<stdio.h>
-#include<stddef.h>
+#include "libft.h"
 
 void ft_bzero (void *s, size_t n)
 {

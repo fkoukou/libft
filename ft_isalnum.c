@@ -6,13 +6,12 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:49:27 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/23 16:49:28 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:59:46 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 int ft_isalnum(int c)
 {
