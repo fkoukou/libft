@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:40:06 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 17:14:41 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/28 11:16:54 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,8 @@ void ft_bzero (void *s, size_t n);
 void *ft_memset(void *b,  int c, size_t len);
 int ft_toupper(int c);
 int ft_tolower(int c);
-char *ft_substr(char const *s, unsigned int start, size_t len);
-char *ft_strchr(const char *s, int c);
-
-
+char *ft_substr(char const *s, unsigned int start, size_t len); 
+char * ft_strdup(const char *s1);
 
 
 

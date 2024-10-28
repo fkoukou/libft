@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:40:30 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 16:59:01 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/27 18:32:45 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,11 @@ void *ft_memset(void *b,  int c, size_t len)
 }
 int main()
 {
-    char str[5];
-    ft_memset(&str[0], '1' , 1);
-    ft_memset(&str[1], '3' , 1);
-    ft_memset(&str[2], '3' , 1);
-    ft_memset(&str[3], '7' , 1);
-     printf("%s",str );
+   int c = 10;
+    ft_memset(&c,  0, 4);
+    ft_memset(&c,  0, 3);
+    ft_memset(&c,  5, 2);
+    ft_memset(&c,  57, 1);
+    printf("%d",c);
     return 0;
 }
