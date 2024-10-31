@@ -6,58 +6,25 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 16:16:53 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 16:59:51 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:28:17 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *b,  int c, size_t len)
+void	*ft_calloc(size_t count, size_t size)
 {
-    unsigned char *ptr;
-    char x;
-    unsigned int i;
+	void	*ptr;
 
-    ptr = b;
-    i = 0;
-    x = c;
-
-    while(i < len)
-    {
-        ptr[i] = x;
-        i++;
-    }
-    return b;
-}
-void *ft_calloc(size_t count, size_t size)
-{
-    void *ptr;
-    if(count != 0 && (size * count) > SIZE_MAX)
-    { 
-        return (NULL);
-    }
-    ptr = (void*)malloc(count*size);
-    if (ptr == NULL)
-    {
-        return NULL;
-    }
-    ft_memset(ptr , 0, size * count);
-    return ptr;
-}
-
-int main() {
-    size_t num_elements = 5;
-    int *array = (int *)ft_calloc(num_elements, sizeof(int));
-
-    
-    if (array == NULL) {
-        printf("Échec de l'allocation de mémoire\n");
-        return 1;
-    }
-
-    for (size_t i = 0; i < num_elements; i++) {
-        printf("array[%zu] = %d\n", i, array[i]); 
-    }
-    free(array);
-    return 0;
+	if (count != 0 && (size * count) > SIZE_MAX)
+	{
+		return (NULL);
+	}
+	ptr = (void *)malloc(count * size);
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+	ft_memset(ptr, 0, size * count);
+	return (ptr);
 }
