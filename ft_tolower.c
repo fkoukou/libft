@@ -6,24 +6,17 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:50:02 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 16:57:53 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/31 12:07:26 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-      if (c >= 65 && c <= 90)
-      {
-        return (c + 32);
-      }
-      return c;
-}
-int main()
-{
-    int c  = 91;
-    int b = ft_tolower(c);
-    printf("%c", (char)b);
+	if (c >= 65 && c <= 90)
+	{
+		return (c + 32);
+	}
+	return (c);
 }

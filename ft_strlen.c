@@ -6,26 +6,20 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 18:34:23 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 16:58:29 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:24:34 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen(char  *s)
+int	ft_strlen(const char *s)
 {
-    int lenght;
-    lenght = 0;    
-    while (s[lenght] != '\0')
-    {
-        lenght++;
-    }
-    return lenght;
-}
+	int	lenght;
 
-int main()
-{
-    char s[] = "hello";
-    int i = ft_strlen(s);
-    printf("%d", i);
+	lenght = 0;
+	while (s[lenght] != '\0')
+	{
+		lenght++;
+	}
+	return (lenght);
 }

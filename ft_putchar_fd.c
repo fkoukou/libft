@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/21 18:34:23 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/31 11:15:33 by fakoukou         ###   ########.fr       */
+/*   Created: 2024/10/31 10:03:05 by fakoukou          #+#    #+#             */
+/*   Updated: 2024/10/31 10:10:42 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include"libft.h"
 
-int	ft_isalpha(int c)
+void ft_putchar_fd(char c, int fd)
 {
-	if ((c >= 65 && c <= 90) || (c >= 98 && c <= 122))
-	{
-		return (1);
-	}
-	return (0);
+      write(fd, &c, 1);
+}
+
+
+int main() {
+    ft_putchar_fd('A', 1); // Affiche 'A' sur la sortie standard
+    ft_putchar_fd('B', 2);
+    return 0;
 }

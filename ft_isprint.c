@@ -6,17 +6,17 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 18:34:23 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/27 16:59:27 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:22:43 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 0 && c <= 32)
 	{
 		return (1);
-	}	
+	}
 	return (0);
 }
