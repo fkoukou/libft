@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:39:19 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/01 13:27:47 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/01 18:44:11 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	char	*ptr;
 
-	j=0;
+	j = 0;
+	if (s1 && s2)
+		return (NULL);
 	lens1 = ft_strlen(s1);
 	lens2 = ft_strlen(s2);
 	i = 0;
@@ -33,10 +35,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 	}
 	while (s2[j] != '\0')
-	{
-		ptr[i] = s2[j];
-		j++;
-		i++;
-	}
+		ptr[i++] = s2[j++];
 	return (ptr);
 }

@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 12:08:52 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/01 13:49:53 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/01 16:08:54 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,31 @@ int	count_digits(int n)
 	return (count);
 }
 
-char *ft_next_itoa(int n , int i, char *ptr)
+char	*ft_next_itoa(int n, int i, char *ptr)
 {
+	int	len;
+	int	index;
+
+	len = count_digits(n);
+	if (n < 0)
+	{
+		ptr[0] = '-';
+		n = -n;
+	}
+	else if (n == 0)
+		ptr[0] = '0';
+	if (n < 0)
+		index = 1;
+	else
+		index = 0;
+	i = len - 1;
 	while (n > 0)
 	{
 		ptr[i] = (n % 10) + '0';
 		n /= 10;
 		i--;
 	}
-	return ptr;
+	return (ptr);
 }
 
 char	*ft_itoa(int n)
@@ -50,25 +66,14 @@ char	*ft_itoa(int n)
 	int		len;
 	int		index;
 	int		i;
-	
-	if(n == -2147483648)
+
+	if (n == -2147483648)
 		return ("-2147483648");
 	len = count_digits(n);
 	ptr = malloc((len + 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
 	ptr[len] = '\0';
-	if (n < 0)
-	{
-		ptr[0] = '-';
-		n = -n;
-	}
-	else if (n == 0)
-		ptr[0] = '0';
-	index = (n < 0) ? 1 : 0;
-	i = len - 1;
-	ptr = ft_next_itoa(n , i , ptr);
+	ptr = ft_next_itoa(n, i, ptr);
 	return (ptr);
 }
-
-
