@@ -1,40 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 13:23:23 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/01 13:17:04 by fakoukou         ###   ########.fr       */
+/*   Created: 2024/11/01 14:31:02 by fakoukou          #+#    #+#             */
+/*   Updated: 2024/11/01 14:53:14 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t len)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	unsigned int		i;
-	unsigned char		*dest1;
-	const unsigned char	*src1;
+	int	i;
 
 	i = 0;
-	dest1 = (unsigned char *)dest;
-	src1 = (const unsigned char *)src;
-	if (!dest1 || !src1)
-		return (NULL);
-	if (dest1 > src1)
+	while (s1 || s2)
 	{
-		while (len-- > 0)
-			dest1[len] = src1[len];
+		if (s1[i] > s2[i])
+			return (s1[i] - s2[i]);
+		else if (s1[i] < s2[i])
+			return (s1[i] - s2[i]);
+		i++;
 	}
-	else
-	{
-		while (i < len)
-		{
-			dest1[i] = src1[i];
-			i++;
-		}
-	}
-	return (dest);
+	return (0);
 }
+/*int main()
+{
+	const char *s1 = NULL;
+	const char *s2 = NULL ;
+	printf("==> %d\n" , ft_strcmp(s1,s2));
+	return (0);
+}*/

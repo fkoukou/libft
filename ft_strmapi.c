@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 09:11:17 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/31 15:56:09 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/01 13:28:26 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*ptr;
-	char			c;
-	unsigned int	i;
+	unsigned int	i=0;
 	unsigned int	len;
 
 	if (!s || !f)
