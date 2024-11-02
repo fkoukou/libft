@@ -6,31 +6,28 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:26:06 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/01 22:27:28 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/02 13:38:31 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int	ft_count(const char *s, char c)
 {
 	int	count;
-	int	in_substring;
+	int	i;
 
 	count = 0;
-	in_substring = 0;
+	i = 0;
 	while (*s)
 	{
 		if (*s == c)
 		{
-			in_substring = 0;
+			i = 0;
 		}
-		else if (!in_substring)
+		else if (!i)
 		{
-			in_substring = 1;
+			i = 1;
 			count++;
 		}
 		s++;
@@ -47,7 +44,7 @@ char	*ft_dup(const char *start, const char *end)
 	ptr = malloc((len + 1) * sizeof(char));
 	if (!ptr)
 		return (NULL);
-	memcpy(ptr, start, len);
+	ft_memcpy(ptr, start, len);
 	ptr[len] = '\0';
 	return (ptr);
 }
@@ -99,21 +96,3 @@ char	**ft_split(const char *s, char c)
 	result[len] = NULL;
 	return (result);
 }
-
-/*int	main(void)
-{
-	char	*s;
-	char	c;
-	char	**spl;
-
-	s = "hello, fkf, ckf, kfk , kskd";
-	c = ',';
-	spl = ft_split(s, c);
-	for (int i = 0; spl[i] != NULL; i++)
-	{
-		printf("%s\n", spl[i]);
-		free(spl[i]);
-	}
-	free(spl);
-	return (0);
-}*/
