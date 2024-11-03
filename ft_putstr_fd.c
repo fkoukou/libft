@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:14:33 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/10/31 16:01:13 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/03 19:05:15 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if (s == NULL)
+	if (s == NULL || fd == -1)
 		return ;
 	while (s[i] != '\0')
 	{
