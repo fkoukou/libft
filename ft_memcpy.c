@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:48:59 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/03 20:21:05 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/04 13:01:04 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned int		i;
+	size_t		i;
 	unsigned char		*dest1;
 	const unsigned char	*src1;
 

@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 13:23:23 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/02 16:21:30 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/04 13:01:14 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-	unsigned int		i;
+	size_t	i;
 	unsigned char		*dest1;
 	const unsigned char	*src1;
 
