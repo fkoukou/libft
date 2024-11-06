@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 16:16:53 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/06 14:55:08 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/06 20:40:47 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	if (count == 0 && (size * count) > SIZE_MAX)
+	if (count == 0 && count > SIZE_MAX / size)
 	{
 		return (NULL);
 	}
