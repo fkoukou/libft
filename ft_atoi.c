@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:01:36 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/03 21:40:16 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/06 14:19:04 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,12 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return (result * signe);
+}
+
+int main()
+{
+
+	printf("%d\n", 	ft_atoi("+45"));
+	printf("%d\n", 	atoi("+45"));
+	
 }
