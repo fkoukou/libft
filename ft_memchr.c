@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:59:08 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/05 23:19:11 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/06 15:49:45 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,4 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		i++;
 	}
 	return (NULL);
-}
-int main()
-{
-	printf("==> %s\n",ft_memchr("koukouafjmggr",97 , 10) );
 }
