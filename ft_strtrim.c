@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 15:02:03 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/03 21:43:10 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/07 21:09:17 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	const char	*end = s1 + ft_strlen(s1);
 	int			len;
 	int			i;
-	char		*trimmed;
+	char		*ptr;
 
 	if (!s1 || !set)
 		return (NULL);
@@ -40,15 +40,15 @@ char	*ft_strtrim(const char *s1, const char *set)
 	while (end > start && ft_ver(set, *(end - 1)))
 		end--;
 	len = end - start;
-	trimmed = malloc(len + 1);
-	if (!trimmed)
+	ptr = malloc(len + 1);
+	if (!ptr)
 		return (NULL);
 	i = 0;
 	while (i < len)
 	{
-		trimmed[i] = start[i];
+		ptr[i] = start[i];
 		i++;
 	}
-	trimmed[len] = '\0';
-	return (trimmed);
+	ptr[len] = '\0';
+	return (ptr);
 }
