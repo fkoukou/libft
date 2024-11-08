@@ -6,14 +6,13 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:40:06 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/08 00:25:22 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/08 22:31:46 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <ctype.h>
 # include <limits.h>
 # include <stddef.h>
 # include <stdio.h>

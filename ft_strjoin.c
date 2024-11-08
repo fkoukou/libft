@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:39:19 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/07 22:22:21 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/08 16:51:29 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_malloc_fonction(int len)
 {
 	char	*ptr;
 
-	ptr = malloc((len + 1) * sizeof(char));
+	ptr = malloc((len + 1));
 	if (ptr == NULL)
 		return (NULL);
 	return (ptr);
@@ -24,7 +24,6 @@ char	*ft_malloc_fonction(int len)
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		lens;
 	int		i;
 	int		j;
 	char	*ptr;
@@ -36,9 +35,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (ft_strdup(s2));
 	if (s2 == NULL)
 		return (ft_strdup(s1));
-	lens = ft_strlen(s1) + ft_strlen(s2);
 	i = 0;
-	ptr = ft_malloc_fonction(lens);
+	ptr = ft_malloc_fonction(ft_strlen(s1) + ft_strlen(s2));
+	if (ptr == NULL)
+		return (NULL);
 	while (s1[i] != '\0')
 	{
 		ptr[i] = s1[i];

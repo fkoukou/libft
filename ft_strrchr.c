@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 09:28:05 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/08 00:36:27 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/08 18:32:57 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ char	*ft_strrchr(const char *s, int c)
 	temp = 0;
 	while (*s)
 	{
-		if ((unsigned char)*s == (unsigned char)c)
+		if ((char)*s == (char)c)
 		{
 			temp = (char *)s;
 		}
 		s++;
 	}
-	if (c == '\0')
+	if ((char)c == (char) '\0')
 	{
 		return ((char *)s);
 	}

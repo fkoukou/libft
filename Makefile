@@ -13,10 +13,7 @@ OBJ = $(SRC_FILES:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rcs $@ $^
-
-%.o: %.c
-	cc $(CFLAGS) -o $@ -c $^
+	ar rc $@ $^
 
 clean:
 	rm -f $(OBJ)
