@@ -6,13 +6,13 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:26:06 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/03 23:43:08 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/10 17:00:50 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count(const char *s, char c)
+static int	ft_count(const char *s, char c)
 {
 	int	count;
 	int	i;
@@ -25,7 +25,7 @@ int	ft_count(const char *s, char c)
 		{
 			i = 0;
 		}
-		else if (!i)
+		else if (i == 0)
 		{
 			i = 1;
 			count++;
@@ -35,7 +35,7 @@ int	ft_count(const char *s, char c)
 	return (count);
 }
 
-char	*ft_dup(const char *start, const char *end)
+static char	*ft_dup(const char *start, const char *end)
 {
 	size_t	len;
 	char	*ptr;
@@ -49,7 +49,7 @@ char	*ft_dup(const char *start, const char *end)
 	return (ptr);
 }
 
-void	*ft_testfree(char **result, int j, int i)
+static void	*ft_testfree(char **result, int j, int i)
 {
 	while (j < i)
 		free(result[j++]);
@@ -57,7 +57,8 @@ void	*ft_testfree(char **result, int j, int i)
 	return (NULL);
 }
 
-char	**ft_next_split(char **result, const char *start, char c, const char *s)
+static char	**ft_next_split(char **result, const char *start, char c,
+		const char *s)
 {
 	int	i;
 	int	j;

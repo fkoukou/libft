@@ -6,13 +6,13 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 15:02:03 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/07 21:09:17 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/10 17:01:57 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_ver(const char *s, int c)
+static char	*ft_ver(const char *s, int c)
 {
 	while (*s)
 	{

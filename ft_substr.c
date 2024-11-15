@@ -6,13 +6,13 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 13:12:13 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/08 23:14:08 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/10 16:53:30 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlen1(const char *s)
+static unsigned int	ft_strlen1(const char *s)
 {
 	int	lenght;
 

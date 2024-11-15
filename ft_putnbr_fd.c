@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:40:51 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/08 23:04:17 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/09 20:50:11 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	char	digit;
 
-	if (n == INT_MIN)
+	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
 		return ;

@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 17:57:05 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/08 16:08:59 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/10 14:11:15 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(const char *s1)
 {
-	int		len;
+	size_t	len;
 	char	*s;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	len = ft_strlen(s1);

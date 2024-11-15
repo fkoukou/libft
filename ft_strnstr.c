@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 10:40:50 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/08 14:45:35 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/10 16:23:39 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (haystack == NULL && len == 0 && needle != NULL)
+		return (NULL);
 	if (*needle == '\0')
 		return ((char *)haystack);
 	i = 0;

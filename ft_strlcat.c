@@ -6,7 +6,7 @@
 /*   By: fakoukou <fakoukou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:02:09 by fakoukou          #+#    #+#             */
-/*   Updated: 2024/11/07 23:41:42 by fakoukou         ###   ########.fr       */
+/*   Updated: 2024/11/11 22:56:59 by fakoukou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	slen;
 	size_t	i;
 
+	if (dst == NULL && size == 0 && src != NULL)
+		return (ft_strlen(src));
 	dlen = ft_strlen(dst);
 	slen = ft_strlen(src);
 	if (size <= dlen)
